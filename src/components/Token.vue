@@ -2,6 +2,7 @@
   <div class="token" @click="setRole" :class="[role.id]">
     <span
       class="icon"
+      :class="alignment"
       v-if="role.id"
       :style="{
         backgroundImage: `url(${
@@ -55,7 +56,11 @@ export default {
     role: {
       type: Object,
       default: () => ({})
-    }
+    },
+    alignment: {
+      type: String,
+      default: null
+    },
   },
   computed: {
     reminderLeaves: function() {
@@ -108,6 +113,13 @@ export default {
     width: 100%;
     height: 100%;
     margin-top: -8%;
+  }
+
+  .icon.good {
+    filter: hue-rotate(205deg) brightness(1.6);
+  }
+  .icon.evil {
+    filter: hue-rotate(165deg) brightness(0.8) contrast(1.3);
   }
 
   span {

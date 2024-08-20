@@ -39,6 +39,7 @@
 
       <Token
         :role="player.role"
+        :alignment="alignment"
         @set-role="$emit('trigger', ['openRoleModal'])"
       />
 
@@ -244,7 +245,23 @@ export default {
       } else {
         return { width: 12 + this.grimoire.zoom + unit };
       }
-    }
+    },
+    alignment: function() {
+      const roleTeam = this.player.role.team;
+      if (
+        (roleTeam === "townsfolk" || roleTeam === "outsider") &&
+        this.player.reminders.some(reminder => reminder.role === "evil")
+      ) {
+        return "evil";
+      }
+      if (
+        (roleTeam === "minion" || roleTeam === "demon") &&
+        this.player.reminders.some(reminder => reminder.role === "good")
+      ) {
+        return "good";
+      }
+      return null;
+    },
   },
   data() {
     return {
