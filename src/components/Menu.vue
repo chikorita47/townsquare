@@ -519,7 +519,8 @@ export default {
     }
 
     .headline {
-      font-family: PiratesBay, sans-serif;
+      font-family: Dumbledor, PiratesBay, sans-serif;
+      text-transform: uppercase;
       letter-spacing: 1px;
       padding: 0 10px;
       text-align: center;

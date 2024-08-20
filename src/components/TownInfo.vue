@@ -131,7 +131,8 @@ export default {
     .meta {
       text-align: center;
       flex-basis: 100%;
-      font-family: PiratesBay, sans-serif;
+      font-family: Dumbledor, PiratesBay, sans-serif;
+      text-transform: uppercase;
       font-weight: normal;
     }
 

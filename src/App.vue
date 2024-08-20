@@ -192,7 +192,8 @@ h4,
 h5 {
   margin: 0;
   text-align: center;
-  font-family: PiratesBay, sans-serif;
+  font-family: Dumbledor, PiratesBay, sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: normal;
 }

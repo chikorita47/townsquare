@@ -200,7 +200,8 @@ export default {
 
 <style scoped lang="scss">
 ul.editions .edition {
-  font-family: PiratesBay, sans-serif;
+  font-family: Dumbledor, PiratesBay, sans-serif;
+  text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
   padding-top: 15%;
