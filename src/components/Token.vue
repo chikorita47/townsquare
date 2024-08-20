@@ -84,7 +84,7 @@ export default {
 .token {
   border-radius: 50%;
   width: 100%;
-  background: url("../assets/token.png") center center;
+  background: url("../assets/life.png") center center;
   background-size: 100%;
   text-align: center;
   border: 3px solid black;
@@ -168,7 +168,8 @@ export default {
       stroke: white;
       stroke-width: 2px;
       paint-order: stroke;
-      font-family: "Papyrus", serif;
+      font-family: "Dumbledor", serif;
+      text-transform: uppercase;
       font-weight: bold;
       text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       letter-spacing: 1px;

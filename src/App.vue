@@ -149,6 +149,12 @@ export default {
   font-display: swap;
 }
 
+@font-face {
+  font-family: Dumbledor;
+  src: url("assets/fonts/dum1.ttf");
+  font-display: swap;
+}
+
 html,
 body {
   font-size: 1.2em;
