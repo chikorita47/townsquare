@@ -32,7 +32,7 @@
         x="66.6%"
         text-anchor="middle"
         class="label mozilla"
-        :font-size="role.name | nameToFontSize"
+        font-size="80%"
       >
         <textPath xlink:href="#curve">
           {{ role.name }}
@@ -70,7 +70,7 @@ export default {
     return {};
   },
   filters: {
-    nameToFontSize: name => (name && name.length > 10 ? "80%" : "80%")
+    nameToFontSize: name => (name && name.length > 10 ? "90%" : "110%")
   },
   methods: {
     setRole() {
@@ -96,16 +96,7 @@ export default {
   transition: border-color 250ms;
 
   &:hover .name .label {
-    stroke: black;
-    fill: white;
-    @-moz-document url-prefix() {
-      &.mozilla {
-        stroke: none;
-        filter: drop-shadow(0 1.2px 0 black) drop-shadow(0 -1.2px 0 black)
-          drop-shadow(1.2px 0 0 black) drop-shadow(-1.2px 0 0 black)
-          drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
-      }
-    }
+    fill: #9c0006;
   }
 
   .icon,
@@ -165,12 +156,9 @@ export default {
     font-size: 24px; // svg fonts are relative to document font size
     .label {
       fill: black;
-      stroke: white;
-      stroke-width: 2px;
-      paint-order: stroke;
       font-family: "Dumbledor", serif;
       text-transform: uppercase;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
       letter-spacing: 1px;
 
       @-moz-document url-prefix() {
