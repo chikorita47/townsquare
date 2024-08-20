@@ -456,7 +456,9 @@ export default {
     }
 
     .life {
-      background-image: url("../assets/death.png");
+      background: url("../assets/token.png") center center rgba(0, 0, 0, 0.75);
+      background-size: 100%;
+      background-blend-mode: multiply;
 
       &:after {
         content: " ";
@@ -464,7 +466,7 @@ export default {
         left: 0;
         top: 0;
         width: 100%;
-        background: url("../assets/vote.png") center center no-repeat;
+        background: url("../assets/token.png") center center no-repeat;
         background-size: 50%;
         height: 100%;
         pointer-events: none;
