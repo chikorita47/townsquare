@@ -715,12 +715,7 @@ li.move:not(.from) .player .overlay svg.move {
   cursor: pointer;
   white-space: nowrap;
   width: 120%;
-  background: rgba(0, 0, 0, 0.5);
-  border: 3px solid black;
-  border-radius: 10px;
   top: 5px;
-  box-shadow: 0 0 5px black;
-  padding: 0 4px;
 
   svg {
     top: 3px;
@@ -732,7 +727,11 @@ li.move:not(.from) .player .overlay svg.move {
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    padding: 0 10px;
   }
 
   #townsquare:not(.spectator) &:hover,
