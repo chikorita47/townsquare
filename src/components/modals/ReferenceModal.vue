@@ -265,7 +265,7 @@ ul {
     .icon {
       width: 8vh;
       background-size: cover;
-      background-position: 0 -5px;
+      background-position: 0 -11px;
       flex-shrink: 0;
       flex-grow: 0;
       &:after {

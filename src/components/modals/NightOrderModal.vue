@@ -262,7 +262,8 @@ ul {
     .icon {
       width: 6vh;
       background-size: cover;
-      background-position: 0 0;
+      background-position: center center;
+      background-repeat: no-repeat;
       flex-grow: 0;
       flex-shrink: 0;
       text-align: center;
