@@ -1,16 +1,5 @@
 <template>
   <ul class="info">
-    <li
-      class="edition"
-      :class="['edition-' + edition.id]"
-      :style="{
-        backgroundImage: `url(${
-          edition.logo && grimoire.isImageOptIn
-            ? edition.logo
-            : require('../assets/editions/' + edition.id + '.png')
-        })`
-      }"
-    ></li>
     <li v-if="players.length - teams.traveler < 5">
       Please add more players!
     </li>
@@ -164,18 +153,6 @@ export default {
     .traveler {
       color: $traveler;
     }
-  }
-
-  li.edition {
-    width: 220px;
-    height: 200px;
-    max-width: 100%;
-    max-height: 100%;
-    background-position: 0 center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    position: absolute;
-    top: -25%;
   }
 }
 </style>

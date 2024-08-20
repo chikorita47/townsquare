@@ -21,6 +21,17 @@
       loop
     ></video>
     <div class="backdrop"></div>
+    <div
+      class="edition"
+      :class="['edition-' + edition.id]"
+      :style="{
+        backgroundImage: `url(${
+          edition.logo && grimoire.isImageOptIn
+            ? edition.logo
+            : require('./assets/editions/' + edition.id + '.png')
+        })`
+      }"
+    ></div>
     <transition name="blur">
       <Intro v-if="!players.length"></Intro>
       <TownInfo v-if="players.length && !session.nomination"></TownInfo>
@@ -74,7 +85,7 @@ export default {
     Gradients
   },
   computed: {
-    ...mapState(["grimoire", "session"]),
+    ...mapState(["edition", "grimoire", "session"]),
     ...mapState("players", ["players"])
   },
   data() {
@@ -360,6 +371,20 @@ video#background {
     animation: move-background 120s linear infinite;
     opacity: 0.3;
   }
+}
+
+#app > .edition {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  pointer-events: none;
+  width: 20%;
+  height: 20%;
+  max-width: 220px;
+  max-height: 200px;
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 @keyframes move-background {
