@@ -84,7 +84,7 @@ export default {
 .token {
   border-radius: 50%;
   width: 100%;
-  background: url("../assets/life.png") center center;
+  background: url("../assets/life2.png") center center;
   background-size: 100%;
   text-align: center;
   border: 3px solid black;
