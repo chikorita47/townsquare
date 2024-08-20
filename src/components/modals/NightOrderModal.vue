@@ -222,6 +222,14 @@ h4 {
     }
   }
 }
+.traveler {
+  .name {
+    background: linear-gradient(90deg, $traveler, transparent 35%);
+    .night .other & {
+      background: linear-gradient(-90deg, $traveler, transparent 35%);
+    }
+  }
+}
 .townsfolk {
   .name {
     background: linear-gradient(90deg, $townsfolk, transparent 35%);

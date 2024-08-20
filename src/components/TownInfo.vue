@@ -130,7 +130,7 @@ export default {
     }
 
     .players {
-      color: #00f700;
+      color: #1bc41b;
     }
     .alive {
       color: #ff4a50;
