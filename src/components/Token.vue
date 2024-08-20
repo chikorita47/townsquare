@@ -70,7 +70,7 @@ export default {
     return {};
   },
   filters: {
-    nameToFontSize: name => (name && name.length > 10 ? "90%" : "110%")
+    nameToFontSize: name => (name && name.length > 10 ? "80%" : "80%")
   },
   methods: {
     setRole() {
@@ -101,8 +101,8 @@ export default {
     @-moz-document url-prefix() {
       &.mozilla {
         stroke: none;
-        filter: drop-shadow(0 1.5px 0 black) drop-shadow(0 -1.5px 0 black)
-          drop-shadow(1.5px 0 0 black) drop-shadow(-1.5px 0 0 black)
+        filter: drop-shadow(0 1.2px 0 black) drop-shadow(0 -1.2px 0 black)
+          drop-shadow(1.2px 0 0 black) drop-shadow(-1.2px 0 0 black)
           drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
       }
     }
@@ -170,7 +170,6 @@ export default {
       paint-order: stroke;
       font-family: "Dumbledor", serif;
       text-transform: uppercase;
-      font-weight: bold;
       text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
       letter-spacing: 1px;
 
@@ -179,9 +178,7 @@ export default {
           // Vue doesn't support scoped media queries, so we have to use a second css class
           stroke: none;
           text-shadow: none;
-          filter: drop-shadow(0 1.5px 0 white) drop-shadow(0 -1.5px 0 white)
-            drop-shadow(1.5px 0 0 white) drop-shadow(-1.5px 0 0 white)
-            drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
         }
       }
     }
