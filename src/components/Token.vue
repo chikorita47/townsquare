@@ -119,7 +119,7 @@ export default {
     filter: hue-rotate(205deg) brightness(1.6);
   }
   .icon.evil {
-    filter: hue-rotate(165deg) brightness(0.8) contrast(1.3);
+    filter: hue-rotate(155deg) brightness(0.8) contrast(1.6);
   }
 
   span {
