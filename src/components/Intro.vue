@@ -1,6 +1,6 @@
 <template>
   <div class="intro">
-    <img src="static/apple-icon.png" alt="" class="logo" />
+    <img src="static/demon-head2.png" alt="" class="logo" />
     <div>
       Welcome to the (unofficial)
       <b>Virtual Town Square and Grimoire</b> for Blood on the Clocktower!
@@ -87,9 +87,6 @@ export default {
     width: 25vh;
     margin-bottom: 2vh;
     max-width: 192px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px black;
-    border: 3px solid black;
   }
   .footer {
     font-size: 60%;
