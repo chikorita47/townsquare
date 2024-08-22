@@ -96,7 +96,7 @@ export default {
       scripts: [
         [
           "No Greater Joy (Teensyville)",
-          '[{"id":"clockmaker"},{"id":"investigator"},{"id":"empath"},{"id":"chambermaid"},{"id":"artist"},{"id":"sage"},{"id":"drunk"},{"id":"klutz"},{"id":"scarlet_woman"},{"id":"baron"},{"id":"imp"}]',
+          '[{"id":"_meta","name":"No Greater Joy"},{"id":"clockmaker"},{"id":"investigator"},{"id":"empath"},{"id":"chambermaid"},{"id":"artist"},{"id":"sage"},{"id":"drunk"},{"id":"klutz"},{"id":"scarlet_woman"},{"id":"baron"},{"id":"imp"}]',
         ],
         [
           "Over the River (Teensyville)",
@@ -104,7 +104,7 @@ export default {
         ],
         [
           "Laissez un Faire (Teensyville)",
-          '[{"id":"balloonist"}, {"id":"savant"}, {"id":"amnesiac"}, {"id":"fisherman"}, {"id":"artist"}, {"id":"cannibal"}, {"id":"mutant"}, {"id":"lunatic"}, {"id":"widow"}, {"id":"goblin"}, {"id":"leviathan"}]',
+          '[{"id":"_meta","name":"Laissez un Faire"},{"id":"balloonist"},{"id":"savant"},{"id":"amnesiac"},{"id":"fisherman"},{"id":"artist"},{"id":"cannibal"},{"id":"mutant"},{"id":"lunatic"},{"id":"widow"},{"id":"goblin"},{"id":"leviathan"}]',
         ],
         [
           "Deadly Penance Day",
