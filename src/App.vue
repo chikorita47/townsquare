@@ -383,11 +383,11 @@ video#background {
   right: 4%;
   bottom: 4%;
   pointer-events: none;
-  width: 20%;
-  height: 20%;
-  max-width: 220px;
-  max-height: 200px;
-  background-position: 0 center;
+  width: 25%;
+  height: 25%;
+  max-width: 250px;
+  max-height: 250px;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
