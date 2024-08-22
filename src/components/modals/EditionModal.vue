@@ -106,30 +106,32 @@ export default {
           "Laissez un Faire (Teensyville)",
           '[{"id":"_meta","name":"Laissez un Faire"},{"id":"balloonist"},{"id":"savant"},{"id":"amnesiac"},{"id":"fisherman"},{"id":"artist"},{"id":"cannibal"},{"id":"mutant"},{"id":"lunatic"},{"id":"widow"},{"id":"goblin"},{"id":"leviathan"}]',
         ],
+        /*
         [
           "Deadly Penance Day",
-          "https://gist.githubusercontent.com/bra1n/0337cc44c6fd2c44f7589256ed5486d2/raw/16be38fa3c01aaf49827303ac80577bdb52c0b25/penanceday.json",
+          '[{"id":"_meta","name":"Deadly Penance Day","author":"TPI"},{"id":"bountyhunter"},{"id":"chef"},{"id":"cultleader"},{"id":"exorcist"},{"id":"fool"},{"id":"gambler"},{"id":"investigator"},{"id":"mayor"},{"id":"philosopher"},{"id":"preacher"},{"id":"sailor"},{"id":"soldier"},{"id":"town_crier"},{"id":"politician"},{"id":"barber"},{"id":"drunk"},{"id":"saint"},{"id":"assassin"},{"id":"witch"},{"id":"spy"},{"id":"baron"},{"id":"lilmonsta"}]',
         ],
         [
           "Catfishing 11.1",
-          "https://gist.githubusercontent.com/bra1n/8a5ec41a7bbf945f6b7dfc1cef72b569/raw/a312ab93c2f302e0ef83c8b65a4e8e82760fda3a/catfishing.json",
+          '[{"id":"_meta","name":"Catfishing11.1","author":"Emily","logo":"https://i.imgur.com/tkFhtDn.png"},{"id":"investigator"},{"id":"chef"},{"id":"grandmother"},{"id":"balloonist"},{"id":"dreamer"},{"id":"fortune_teller"},{"id":"snake_charmer"},{"id":"gambler"},{"id":"savant"},{"id":"philosopher"},{"id":"ravenkeeper"},{"id":"amnesiac"},{"id":"cannibal"},{"id":"drunk"},{"id":"recluse"},{"id":"sweetheart"},{"id":"mutant"},{"id":"lunatic"},{"id":"godfather"},{"id":"cerenovus"},{"id":"pit-hag"},{"id":"widow"},{"id":"imp"},{"id":"vigormortis"},{"id":"fang_gu"},{"id":"beggar"},{"id":"barista"},{"id":"apprentice"},{"id":"harlot"},{"id":"bone_collector"}]',
         ],
         [
           "On Thin Ice (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/8dacd9f2abc6f428331ea1213ab153f5/raw/0cacbcaf8ed9bddae0cca25a9ada97e9958d868b/on-thin-ice.json",
+          '[{"id":"sentinel"},{"id":"artist"},{"id":"philosopher"},{"id":"professor"},{"id":"seamstress"},{"id":"slayer"},{"id":"virgin"},{"id":"klutz"},{"id":"moonchild"},{"id":"eviltwin"},{"id":"mastermind"},{"id":"pukka"}]',
         ],
         [
           "Race To The Bottom (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/63e1354cb3dc9d4032bcd0623dc48888/raw/5acb0eedcc0a67a64a99c7e0e6271de0b7b2e1b2/race-to-the-bottom.json",
+          '[{"id":"doomsayer"},{"id":"sentinel"},{"id":"clockmaker"},{"id":"empath"},{"id":"dreamer"},{"id":"slayer"},{"id":"courtier"},{"id":"mayor"},{"id":"lunatic"},{"id":"klutz"},{"id":"scarletwoman"},{"id":"spy"},{"id":"vortox"}]',
         ],
         [
           "Frankenstein's Mayor by Ted (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/32c52b422cc01b934a4291eeb81dbcee/raw/5bf770693bbf7aff5e86601c82ca4af3222f4ba6/Frankensteins_Mayor_by_Ted.json",
+          '[{"id":"sentinel"},{"id":"chef"},{"id":"undertaker"},{"id":"oracle"},{"id":"sage"},{"id":"ravenkeeper"},{"id":"mayor"},{"id":"recluse"},{"id":"lunatic"},{"id":"poisoner"},{"id":"spy"},{"id":"zombuul"}]',
         ],
         [
           "Vigormortis High School (Teensyville)",
-          "https://gist.githubusercontent.com/bra1n/1f65bd4a999524719d5dabe98c3c2d27/raw/22bbec6bf56a51a7459e5ae41ed47e41971c5445/VigormortisHighSchool.json",
+          '[{"id":"sentinel"},{"id":"chef"},{"id":"empath"},{"id":"chambermaid"},{"id":"monk"},{"id":"ravenkeeper"},{"id":"mayor"},{"id":"saint"},{"id":"goon"},{"id":"poisoner"},{"id":"devils_advocate"},{"id":"vigormortis"}]',
         ],
+        */
       ],
     };
   },
