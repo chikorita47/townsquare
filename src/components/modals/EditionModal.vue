@@ -51,7 +51,7 @@
         <li
           v-for="(script, index) in scripts"
           :key="index"
-          @click="handleURL(script[1])"
+          @click="handleURLOrJSON(script[1])"
         >
           {{ script[0] }}
         </li>
@@ -95,6 +95,18 @@ export default {
       isCustom: false,
       scripts: [
         [
+          "No Greater Joy (Teensyville)",
+          '[{"id":"clockmaker"},{"id":"investigator"},{"id":"empath"},{"id":"chambermaid"},{"id":"artist"},{"id":"sage"},{"id":"drunk"},{"id":"klutz"},{"id":"scarlet_woman"},{"id":"baron"},{"id":"imp"}]',
+        ],
+        [
+          "Over the River (Teensyville)",
+          '[{"id":"_meta","name":"Over the River","author":"Andrew Nathenson"},{"id":"grandmother"},{"id":"clockmaker"},{"id":"innkeeper"},{"id":"snake_charmer"},{"id":"professor"},{"id":"slayer"},{"id":"lunatic"},{"id":"recluse"},{"id":"godfather"},{"id":"spy"},{"id":"imp"}]',
+        ],
+        [
+          "Laissez un Faire (Teensyville)",
+          '[{"id":"balloonist"}, {"id":"savant"}, {"id":"amnesiac"}, {"id":"fisherman"}, {"id":"artist"}, {"id":"cannibal"}, {"id":"mutant"}, {"id":"lunatic"}, {"id":"widow"}, {"id":"goblin"}, {"id":"leviathan"}]'
+        ],
+        [
           "Deadly Penance Day",
           "https://gist.githubusercontent.com/bra1n/0337cc44c6fd2c44f7589256ed5486d2/raw/16be38fa3c01aaf49827303ac80577bdb52c0b25/penanceday.json"
         ],
@@ -117,7 +129,7 @@ export default {
         [
           "Vigormortis High School (Teensyville)",
           "https://gist.githubusercontent.com/bra1n/1f65bd4a999524719d5dabe98c3c2d27/raw/22bbec6bf56a51a7459e5ae41ed47e41971c5445/VigormortisHighSchool.json"
-        ]
+        ],
       ]
     };
   },
@@ -157,6 +169,14 @@ export default {
         } catch (e) {
           alert("Error loading custom script: " + e.message);
         }
+      }
+    },
+    async handleURLOrJSON(urlOrJson) {
+      try {
+        const script = JSON.parse(urlOrJson);
+        this.parseRoles(script);
+      } catch {
+        await this.handleURL(urlOrJson);
       }
     },
     async readFromClipboard() {

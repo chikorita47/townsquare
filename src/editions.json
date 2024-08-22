@@ -25,14 +25,5 @@
     "level": "Intermediate",
     "roles": [],
     "isOfficial": true
-  },
-  {
-    "id": "luf",
-    "name": "Laissez un Faire",
-    "author": "The Pandemonium Institute",
-    "description": "",
-    "level": "Veteran",
-    "roles": ["balloonist", "savant", "amnesiac", "fisherman", "artist", "cannibal", "mutant", "lunatic", "widow", "goblin", "leviathan"],
-    "isOfficial": true
   }
 ]
