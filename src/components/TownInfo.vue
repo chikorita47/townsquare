@@ -140,19 +140,19 @@ export default {
       color: #fff;
     }
     .townsfolk {
-      color: $townsfolk;
+      color: $townsfolk-light;
     }
     .outsider {
-      color: $outsider;
+      color: $outsider-light;
     }
     .minion {
-      color: $minion;
+      color: $minion-light;
     }
     .demon {
-      color: $demon;
+      color: $demon-light;
     }
     .traveler {
-      color: $traveler;
+      color: $traveler-light;
     }
   }
 }

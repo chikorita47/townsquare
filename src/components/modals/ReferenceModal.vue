@@ -173,7 +173,7 @@ h3 {
 
 .townsfolk {
   .name {
-    color: $townsfolk;
+    color: $townsfolk-light;
   }
   aside {
     background: linear-gradient(-90deg, $townsfolk, transparent);
@@ -181,7 +181,7 @@ h3 {
 }
 .outsider {
   .name {
-    color: $outsider;
+    color: $outsider-light;
   }
   aside {
     background: linear-gradient(-90deg, $outsider, transparent);
@@ -189,7 +189,7 @@ h3 {
 }
 .minion {
   .name {
-    color: $minion;
+    color: $minion-light;
   }
   aside {
     background: linear-gradient(-90deg, $minion, transparent);
@@ -197,7 +197,7 @@ h3 {
 }
 .demon {
   .name {
-    color: $demon;
+    color: $demon-light;
   }
   aside {
     background: linear-gradient(-90deg, $demon, transparent);
