@@ -163,7 +163,7 @@ export default {
 
 @font-face {
   font-family: Dumbledor;
-  src: url("assets/fonts/dum1.ttf");
+  src: url("assets/fonts/dumk.woff2");
   font-display: swap;
 }
 
@@ -206,7 +206,6 @@ h5 {
   text-align: center;
   font-family: Dumbledor, PiratesBay, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-weight: normal;
 }
 

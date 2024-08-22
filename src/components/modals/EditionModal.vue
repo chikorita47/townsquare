@@ -224,7 +224,6 @@ export default {
 ul.editions .edition {
   font-family: Dumbledor, PiratesBay, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
   text-align: center;
   padding-top: 15%;
   background-position: center center;
