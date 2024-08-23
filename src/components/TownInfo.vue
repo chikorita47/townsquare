@@ -50,8 +50,14 @@
           :icon="teams.traveler > 1 ? 'user-friends' : 'user'"
         />
       </span>
+    </li>
+    <li>
+      <span v-if="!grimoire.isNight">
+        Day
+        <font-awesome-icon :icon="['fas', 'sun']" />
+      </span>
       <span v-if="grimoire.isNight">
-        Night phase
+        Night
         <font-awesome-icon :icon="['fas', 'cloud-moon']" />
       </span>
     </li>
