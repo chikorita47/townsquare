@@ -114,10 +114,6 @@ export default {
           "Shadow Puppets",
           '[{"id":"_meta","name":"Shadow Puppets"},{"id":"washerwoman"},{"id":"investigator"},{"id":"librarian"},{"id":"chef"},{"id":"empath"},{"id":"fortune_teller"},{"id":"undertaker"},{"id":"monk"},{"id":"ravenkeeper"},{"id":"virgin"},{"id":"slayer"},{"id":"soldier"},{"id":"mayor"},{"id":"butler"},{"id":"saint"},{"id":"recluse"},{"id":"drunk"},{"id":"lunatic"},{"id":"poisoner"},{"id":"spy"},{"id":"baron"},{"id":"scarlet_woman"},{"id":"marionette"},{"id":"imp"}]',
         ],
-        [
-          "Half of the 108",
-          '[{"id":"washerwoman"},{"id":"librarian"},{"id":"investigator"},{"id":"chef"},{"id":"empath"},{"id":"fortune_teller"},{"id":"undertaker"},{"id":"monk"},{"id":"ravenkeeper"},{"id":"virgin"},{"id":"slayer"},{"id":"soldier"},{"id":"mayor"},{"id":"butler"},{"id":"drunk"},{"id":"recluse"},{"id":"saint"},{"id":"poisoner"},{"id":"spy"},{"id":"baron"},{"id":"scarlet_woman"},{"id":"legion"},{"id":"imp"},{"id":"vortox"}]',
-        ],
         /*
         [
           "Deadly Penance Day",
