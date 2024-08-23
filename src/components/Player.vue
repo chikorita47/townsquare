@@ -483,9 +483,8 @@ export default {
         left: 0;
         top: 0;
         width: 100%;
-        background: url("../assets/reminder.webp") center center no-repeat;
+        background: url("../assets/vote.png") center center no-repeat;
         background-size: 50%;
-        filter: brightness(2.2) grayscale(0.5) contrast(1.3) hue-rotate(345deg);
         height: 100%;
         pointer-events: none;
       }
@@ -494,6 +493,10 @@ export default {
 
   &.traveler .life {
     filter: grayscale(100%);
+  }
+
+  &.dead.traveler .life:after {
+    filter: brightness(1.25);
   }
 }
 
