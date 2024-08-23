@@ -448,7 +448,7 @@ export default {
   .life {
     border-radius: 50%;
     width: 100%;
-    background: url("../assets/token.png") center center;
+    background: url("../assets/dead.webp") center center;
     background-size: 100%;
     border: 3px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -473,7 +473,7 @@ export default {
     }
 
     .life {
-      background: url("../assets/token.png") center center rgba(0, 0, 0, 0.75);
+      background: url("../assets/dead.webp") center center rgba(0, 0, 0, 0.75);
       background-size: 100%;
       background-blend-mode: multiply;
 
@@ -483,8 +483,9 @@ export default {
         left: 0;
         top: 0;
         width: 100%;
-        background: url("../assets/token.png") center center no-repeat;
+        background: url("../assets/reminder.webp") center center no-repeat;
         background-size: 50%;
+        filter: brightness(2.2) grayscale(0.5) contrast(1.3) hue-rotate(345deg);
         height: 100%;
         pointer-events: none;
       }
@@ -860,7 +861,7 @@ li.move:not(.from) .player .overlay svg.move {
 
 /***** Reminder token *****/
 .circle .reminder {
-  background: url("../assets/reminder.png") center center;
+  background: url("../assets/life.png") center center;
   background-size: 100%;
   width: 50%;
   height: 0;

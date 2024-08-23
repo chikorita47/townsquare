@@ -119,7 +119,7 @@ export default {
 
 <style scoped lang="scss">
 ul.reminders .reminder {
-  background: url("../../assets/reminder.png") center center;
+  background: url("../../assets/life.png") center center;
   background-size: 100%;
   width: 14vh;
   height: 14vh;
