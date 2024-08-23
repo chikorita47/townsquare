@@ -7,12 +7,16 @@
       night: grimoire.isNight,
       static: grimoire.isStatic,
     }"
-    :style="{
-      backgroundImage: grimoire.background
-        ? `url('${grimoire.background}')`
-        : '',
-    }"
   >
+    <div
+      id="responsive-background"
+      :class="[grimoire.background ? '' : 'background-' + edition.id]"
+      :style="{
+        backgroundImage: grimoire.background
+          ? `url('${grimoire.background}')`
+          : '',
+      }"
+    ></div>
     <video
       id="background"
       v-if="grimoire.background && grimoire.background.match(/\.(mp4|webm)$/i)"
@@ -171,8 +175,6 @@ html,
 body {
   font-size: 1.2em;
   line-height: 1.4;
-  background: url("assets/background.jpg") center center;
-  background-size: cover;
   color: white;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
@@ -217,8 +219,6 @@ ul {
 
 #app {
   height: 100%;
-  background-position: center center;
-  background-size: cover;
   display: flex;
   align-items: center;
   align-content: center;
@@ -231,6 +231,29 @@ ul {
     transition: none !important;
     animation: none !important;
   }
+}
+
+#responsive-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("assets/background.jpg") center center;
+  background-size: cover;
+}
+
+.background-tb {
+  filter: hue-rotate(60deg) brightness(0.9);
+}
+.background-bmr {
+  filter: hue-rotate(120deg) brightness(1.9);
+}
+.background-snv {
+  filter: none;
+}
+.background-custom {
+  filter: hue-rotate(280deg) brightness(1.2);
 }
 
 #version {
