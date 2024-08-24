@@ -175,7 +175,7 @@ html,
 body {
   font-size: 1.2em;
   line-height: 1.4;
-  color: white;
+  color: #e8e8e8;
   height: 100%;
   font-family: "Roboto Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -183,6 +183,7 @@ body {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  user-select: none;
 }
 
 @import "media";
@@ -316,7 +317,7 @@ ul {
   transition: all 200ms;
   white-space: nowrap;
   &:hover {
-    color: red;
+    color: $hover-red;
   }
   &.disabled {
     color: gray;

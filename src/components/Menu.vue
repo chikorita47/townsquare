@@ -428,7 +428,7 @@ export default {
 
   > svg {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(127, 127, 127, 0.5);
     border: 3px solid black;
     width: 40px;
     height: 50px;
@@ -442,7 +442,7 @@ export default {
     color: white;
     text-decoration: none;
     &:hover {
-      color: red;
+      color: $hover-red;
     }
   }
 
@@ -454,14 +454,14 @@ export default {
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0 0 10px black;
-    border: 3px solid black;
+    border: 3px solid rgba(48, 48, 48, 0.9);
     border-radius: 10px 0 10px 10px;
 
     li {
       padding: 2px 5px;
-      color: white;
+      color: #e8e8e8;
       text-align: left;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(48, 48, 48, 0.9);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -474,13 +474,13 @@ export default {
           flex-grow: 1;
           flex-shrink: 0;
           height: 35px;
-          border-bottom: 3px solid black;
-          border-right: 3px solid black;
+          border-bottom: 3px solid rgba(32, 32, 32, 0.9);
+          border-right: 3px solid rgba(32, 32, 32, 0.9);
           padding: 5px 0;
           cursor: pointer;
           transition: color 250ms;
           &:hover {
-            color: red;
+            color: $hover-red;
           }
           &:last-child {
             border-right: 0;
@@ -494,14 +494,14 @@ export default {
           background: linear-gradient(
             to bottom,
             $townsfolk 0%,
-            rgba(0, 0, 0, 0.5) 100%
+            rgba(32, 32, 32, 0.5) 100%
           );
         }
       }
 
       &:not(.headline):not(.tabs):hover {
         cursor: pointer;
-        color: red;
+        color: $hover-red;
       }
 
       em {
@@ -521,8 +521,8 @@ export default {
       background: linear-gradient(
         to right,
         $townsfolk 0%,
-        rgba(0, 0, 0, 0.5) 20%,
-        rgba(0, 0, 0, 0.5) 80%,
+        rgba(72, 72, 72, 0.9) 20%,
+        rgba(72, 72, 72, 0.9) 80%,
         $demon 100%
       );
     }

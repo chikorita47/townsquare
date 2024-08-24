@@ -113,7 +113,7 @@ export default {
   top: 15px;
   cursor: pointer;
   &:hover {
-    color: red;
+    color: $hover-red;
   }
 }
 
@@ -130,7 +130,7 @@ export default {
   text-decoration: none;
   margin: 0 15px;
   &:hover {
-    color: red;
+    color: $hover-red;
     cursor: pointer;
   }
 }

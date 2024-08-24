@@ -187,7 +187,7 @@ export default {
   top: 15px;
   cursor: pointer;
   &:hover {
-    color: red;
+    color: $hover-red;
   }
 }
 

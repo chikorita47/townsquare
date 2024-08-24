@@ -45,6 +45,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../../vars.scss";
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -59,7 +61,7 @@ export default {
 }
 
 .modal {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(40, 40, 40, 0.95);
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 20px 1px #000;
@@ -101,7 +103,7 @@ export default {
       cursor: pointer;
       width: 28px;
       &:hover {
-        color: red;
+        color: $hover-red;
       }
     }
   }

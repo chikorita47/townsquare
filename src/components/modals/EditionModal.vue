@@ -231,6 +231,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../../vars.scss";
+
 ul.editions .edition {
   font-family: Dumbledor, PiratesBay, sans-serif;
   text-transform: uppercase;
@@ -250,7 +252,7 @@ ul.editions .edition {
     0 0 5px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   &:hover {
-    color: red;
+    color: $hover-red;
   }
 }
 
@@ -268,7 +270,7 @@ ul.editions .edition {
     text-align: left;
     margin: 10px auto;
     li:hover {
-      color: red;
+      color: $hover-red;
     }
   }
 }

@@ -748,16 +748,15 @@ li.move:not(.from) .player .overlay svg.move {
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    border: 3px solid black;
+    background: rgba(96, 96, 96, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 5px black;
-    padding: 0 10px;
+    padding: 3px 13px;
   }
 
   #townsquare:not(.spectator) &:hover,
   &.active {
-    color: red;
+    color: #ff3d3d;
   }
 
   &:hover .pronouns {
@@ -806,10 +805,10 @@ li.move:not(.from) .player .overlay svg.move {
   bottom: -5px;
   text-align: left;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(64, 64, 64, 0.96);
   padding: 2px 5px;
   border-radius: 10px;
-  border: 3px solid #000;
+  border: 3px solid rgba(64, 64, 64, 0.96);
   margin-left: 15px;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -827,7 +826,7 @@ li.move:not(.from) .player .overlay svg.move {
   }
 
   li:hover {
-    color: red;
+    color: $hover-red;
   }
 
   li.disabled {

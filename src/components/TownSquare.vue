@@ -338,7 +338,7 @@ export default {
           left: auto;
           &:before {
             border-right-color: transparent;
-            border-left-color: black;
+            border-left-color: rgba(64, 64, 64, 0.96);
             right: auto;
             left: 100%;
           }
@@ -406,9 +406,9 @@ export default {
     top: 10px;
   }
   left: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(96, 96, 96, 0.5);
   border-radius: 10px;
-  border: 3px solid black;
+  padding: 3px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
   transform-origin: bottom left;
   transform: scale(1);
@@ -422,7 +422,7 @@ export default {
     right: 10px;
     cursor: pointer;
     &:hover {
-      color: red;
+      color: $hover-red;
     }
   }
   h3 {
@@ -533,9 +533,9 @@ export default {
     width: 350px;
     z-index: 25;
     font-size: 70%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(64, 64, 64, 0.96);
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid rgba(96, 96, 96, 0.96);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
     text-align: left;
     align-items: center;
@@ -568,7 +568,7 @@ export default {
     background: linear-gradient(
       to right,
       $townsfolk 0%,
-      rgba(0, 0, 0, 0.5) 20%
+      rgba(64, 64, 64, 0.96) 20%
     );
     &:before {
       content: "First Night";
@@ -582,7 +582,11 @@ export default {
 
   &.other span {
     left: 120%;
-    background: linear-gradient(to right, $demon 0%, rgba(0, 0, 0, 0.5) 20%);
+    background: linear-gradient(
+      to right,
+      $demon 0%,
+      rgba(64, 64, 64, 0.96) 20%
+    );
     &:before {
       content: "Other Nights";
     }

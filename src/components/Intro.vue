@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../vars.scss";
 // Intro
 .intro {
   text-align: center;
@@ -71,7 +72,7 @@ export default {
     border-radius: 10px;
 
     &:hover {
-      color: red;
+      color: $hover-red;
     }
     img {
       width: 120px;

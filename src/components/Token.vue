@@ -202,9 +202,9 @@ export default {
     width: 250px;
     z-index: 25;
     font-size: 80%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(64, 64, 64, 0.96);
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid rgba(96, 96, 96, 0.96);
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
     text-align: left;
     justify-items: center;
@@ -219,7 +219,7 @@ export default {
       border: 10px solid transparent;
       width: 0;
       height: 0;
-      border-right-color: black;
+      border-right-color: rgba(64, 64, 64, 0.96);
       position: absolute;
       margin-right: 2px;
       right: 100%;

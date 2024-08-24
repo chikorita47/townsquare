@@ -237,7 +237,7 @@ ul.tokens {
         cursor: pointer;
         &:hover {
           opacity: 1;
-          color: red;
+          color: $hover-red;
         }
       }
     }
@@ -279,7 +279,7 @@ ul.tokens {
     cursor: pointer;
     &.checked,
     &:hover {
-      color: red;
+      color: $hover-red;
     }
     &.checked {
       margin-top: 10px;
