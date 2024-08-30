@@ -40,7 +40,12 @@
       <Token
         :role="player.role"
         :alignment="alignment"
-        @set-role="$emit('trigger', ['openRoleModal'])"
+        @set-role="
+          session.isSpectator &&
+          !players.some((player) => player.id === session.playerId)
+            ? (isMenuOpen = !isMenuOpen)
+            : $emit('trigger', ['openRoleModal'])
+        "
       />
 
       <!-- Overlay icons -->
