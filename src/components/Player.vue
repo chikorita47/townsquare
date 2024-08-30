@@ -770,9 +770,8 @@ li.move:not(.from) .player .overlay svg.move {
     right: 110%;
     max-width: 250px;
     z-index: 25;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(96, 96, 96, 0.5);
     border-radius: 10px;
-    border: 3px solid black;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
     align-items: center;
     pointer-events: none;
@@ -786,7 +785,7 @@ li.move:not(.from) .player .overlay svg.move {
       border: 10px solid transparent;
       width: 0;
       height: 0;
-      border-left-color: black;
+      border-left-color: rgba(64, 64, 64, 0.96);
       position: absolute;
       margin-left: 2px;
       left: 100%;
@@ -819,7 +818,7 @@ li.move:not(.from) .player .overlay svg.move {
     height: 0;
     position: absolute;
     border: 10px solid transparent;
-    border-right-color: black;
+    border-right-color: rgba(64, 64, 64, 0.96);
     right: 100%;
     bottom: 5px;
     margin-right: 2px;

@@ -61,7 +61,7 @@ export default {
 }
 
 .modal {
-  background: rgba(40, 40, 40, 0.95);
+  background: rgba(40, 40, 40, 0.97);
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 20px 1px #000;
@@ -115,7 +115,7 @@ export default {
 }
 
 .maximized {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(40, 40, 40, 0.97);
   padding: 0;
   border-radius: 0;
   height: 100%;

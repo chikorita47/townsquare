@@ -318,7 +318,7 @@ export default {
           right: 110%;
           margin-right: 15px;
           &:before {
-            border-left-color: black;
+            border-left-color: rgba(64, 64, 64, 0.96);
             border-right-color: transparent;
             right: auto;
             left: 100%;
@@ -348,7 +348,7 @@ export default {
           right: auto;
           &:before {
             border-left-color: transparent;
-            border-right-color: black;
+            border-right-color: rgba(64, 64, 64, 0.96);
             left: auto;
             right: 100%;
           }

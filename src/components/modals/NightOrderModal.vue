@@ -310,11 +310,12 @@ ul {
       bottom: 10%;
       width: 500px;
       z-index: 25;
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(64, 64, 64, 0.96);
       border-radius: 10px;
-      border: 3px solid black;
+      border: 3px solid rgba(96, 96, 96, 0.96);
       filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
       text-align: left;
+      line-height: 1.2;
       pointer-events: none;
       opacity: 0;
       transition: opacity 200ms ease-in-out;

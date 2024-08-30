@@ -51,8 +51,7 @@ export default {
   font-size: 120%;
   position: absolute;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 3px solid black;
+  background: rgba(96, 96, 96, 0.5);
   border-radius: 10px;
   z-index: 3;
   display: flex;
@@ -67,8 +66,7 @@ export default {
     top: 100%;
     margin-top: 2vh;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 3px solid black;
+    background: rgba(96, 96, 96, 0.5);
     border-radius: 10px;
 
     &:hover {
