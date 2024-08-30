@@ -396,9 +396,9 @@ export default {
   }
 
   span.session {
-    color: $demon;
+    color: $demon-light;
     &.spectator {
-      color: $townsfolk;
+      color: $townsfolk-light;
     }
     &.reconnecting {
       animation: blink 1s infinite;

@@ -287,11 +287,11 @@ export default {
   }
 
   em {
-    color: $demon;
+    color: $demon-light;
     font-style: normal;
     font-weight: bold;
     &.blue {
-      color: $townsfolk;
+      color: $townsfolk-light;
     }
   }
 
@@ -374,7 +374,7 @@ export default {
     filter: blur(0);
   }
   90% {
-    color: $townsfolk;
+    color: $townsfolk-light;
     opacity: 1;
   }
   100% {
@@ -396,7 +396,7 @@ export default {
     filter: blur(0);
   }
   90% {
-    color: $demon;
+    color: $demon-light;
     opacity: 1;
   }
   100% {

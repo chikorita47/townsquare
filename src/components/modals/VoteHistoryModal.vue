@@ -157,10 +157,10 @@ thead td {
 
 tbody {
   td:nth-child(2) {
-    color: $townsfolk;
+    color: $townsfolk-light;
   }
   td:nth-child(3) {
-    color: $demon;
+    color: $demon-light;
   }
   td:nth-child(5) {
     text-align: center;
