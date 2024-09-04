@@ -183,6 +183,13 @@ module.exports = (store) => {
           localStorage.removeItem("playerId");
         }
         break;
+      case "session/setTimer":
+        if (payload) {
+          localStorage.setItem("timer", payload);
+        } else {
+          localStorage.removeItem("timer")
+        }
+        break;
     }
   });
 };

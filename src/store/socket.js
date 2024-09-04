@@ -123,6 +123,8 @@ class LiveSession {
     } catch (err) {
       console.log("unsupported socket message", data);
     }
+    console.log('Received command', command)
+    console.log('Received data', data)
     switch (command) {
       case "getGamestate":
         this.sendGamestate(params);
@@ -205,6 +207,10 @@ class LiveSession {
       case "pronouns":
         this._updatePlayerPronouns(params);
         break;
+      case "setTimer":
+        this._store.commit("session/setTimer", params)
+        console.log('timer params ⏰', params);
+        break;
     }
   }
 
@@ -263,6 +269,7 @@ class LiveSession {
         ? { roleId: player.role.id }
         : {}),
     }));
+    console.log('sending gamestate: ', this._gamestate, this._store.state.session)
     if (isLightweight) {
       this._sendDirect(playerId, "gs", {
         gamestate: this._gamestate,
@@ -283,6 +290,7 @@ class LiveSession {
         markedPlayer: session.markedPlayer,
         fabled: fabled.map((f) => (f.isCustom ? f : { id: f.id })),
         ...(session.nomination ? { votes: session.votes } : {}),
+        timer: session.timer,
       });
     }
   }
@@ -306,6 +314,7 @@ class LiveSession {
       isVoteInProgress,
       markedPlayer,
       fabled,
+      timer
     } = data;
     const players = this._store.state.players.players;
     // adjust number of players
@@ -363,6 +372,7 @@ class LiveSession {
       this._store.commit("players/setFabled", {
         fabled: fabled.map((f) => this._store.state.fabled.get(f.id) || f),
       });
+      this._store.commit("session/setTimer", timer)
     }
   }
 
@@ -832,6 +842,13 @@ class LiveSession {
     if (this._isSpectator) return;
     this._send("remove", payload);
   }
+
+  setTimer(payload) {
+    if (this._isSpectator) return;
+    console.log('setTimer payload!!!', payload)
+    // this._store.commit("session/timer", Date.now())
+    this._send("setTimer", payload);
+  }
 }
 
 export default (store) => {
@@ -878,6 +895,10 @@ export default (store) => {
         break;
       case "session/setVoteHistoryAllowed":
         session.setVoteHistoryAllowed();
+        break;
+      case "session/setTimer":
+        console.log('session setTimer subscription')
+        session.setTimer(payload);
         break;
       case "toggleNight":
         session.setIsNight();

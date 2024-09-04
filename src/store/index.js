@@ -1,13 +1,13 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import persistence from "./persistence";
-import socket from "./socket";
-import players from "./modules/players";
-import session from "./modules/session";
-import editionJSON from "../editions.json";
-import rolesJSON from "../roles.json";
-import fabledJSON from "../fabled.json";
-import jinxesJSON from "../hatred.json";
+import Vue from 'vue';
+import Vuex from 'vuex';
+import persistence from './persistence';
+import socket from './socket';
+import players from './modules/players';
+import session from './modules/session';
+import editionJSON from '../editions.json';
+import rolesJSON from '../roles.json';
+import fabledJSON from '../fabled.json';
+import jinxesJSON from '../hatred.json';
 
 Vue.use(Vuex);
 
@@ -17,7 +17,7 @@ const getRolesByEdition = (edition = editionJSON[0]) => {
     rolesJSON
       .filter((r) => r.edition === edition.id || edition.roles.includes(r.id))
       .sort((a, b) => b.team.localeCompare(a.team))
-      .map((role) => [role.id, role]),
+      .map((role) => [role.id, role])
   );
 };
 
@@ -26,11 +26,11 @@ const getTravelersNotInEdition = (edition = editionJSON[0]) => {
     rolesJSON
       .filter(
         (r) =>
-          r.team === "traveler" &&
+          r.team === 'traveler' &&
           r.edition !== edition.id &&
-          !edition.roles.includes(r.id),
+          !edition.roles.includes(r.id)
       )
-      .map((role) => [role.id, role]),
+      .map((role) => [role.id, role])
   );
 };
 
@@ -50,11 +50,11 @@ const toggle =
     }
   };
 
-const clean = (id) => id.toLocaleLowerCase().replace(/[^a-z0-9]/g, "");
+const clean = (id) => id.toLocaleLowerCase().replace(/[^a-z0-9]/g, '');
 
 // global data maps
 const editionJSONbyId = new Map(
-  editionJSON.map((edition) => [edition.id, edition]),
+  editionJSON.map((edition) => [edition.id, edition])
 );
 const rolesJSONbyId = new Map(rolesJSON.map((role) => [role.id, role]));
 const fabled = new Map(fabledJSON.map((role) => [role.id, role]));
@@ -70,7 +70,7 @@ try {
     jinxesJSON.map(({ id, hatred }) => [
       clean(id),
       new Map(hatred.map(({ id, reason }) => [clean(id), reason])),
-    ]),
+    ])
   );
   // });
 } catch (e) {
@@ -79,19 +79,19 @@ try {
 
 // base definition for custom roles
 const customRole = {
-  id: "",
-  name: "",
-  image: "",
-  ability: "",
-  edition: "custom",
+  id: '',
+  name: '',
+  image: '',
+  ability: '',
+  edition: 'custom',
   firstNight: 0,
-  firstNightReminder: "",
+  firstNightReminder: '',
   otherNight: 0,
-  otherNightReminder: "",
+  otherNightReminder: '',
   reminders: [],
   remindersGlobal: [],
   setup: false,
-  team: "townsfolk",
+  team: 'townsfolk',
   isCustom: true,
 };
 
@@ -110,7 +110,7 @@ export default new Vuex.Store({
       isMuted: false,
       isImageOptIn: false,
       zoom: 0,
-      background: "",
+      background: '',
     },
     modals: {
       edition: false,
@@ -123,7 +123,7 @@ export default new Vuex.Store({
       roles: false,
       voteHistory: false,
     },
-    edition: editionJSONbyId.get("tb"),
+    edition: editionJSONbyId.get('tb'),
     roles: getRolesByEdition(),
     otherTravelers: getTravelersNotInEdition(),
     fabled,
@@ -140,9 +140,9 @@ export default new Vuex.Store({
       const customRoles = [];
       const customKeys = Object.keys(customRole);
       const strippedProps = [
-        "firstNightReminder",
-        "otherNightReminder",
-        "isCustom",
+        'firstNightReminder',
+        'otherNightReminder',
+        'isCustom',
       ];
       roles.forEach((role) => {
         if (!role.isCustom) {
@@ -166,15 +166,15 @@ export default new Vuex.Store({
     rolesJSONbyId: () => rolesJSONbyId,
   },
   mutations: {
-    setZoom: set("zoom"),
-    setBackground: set("background"),
-    toggleMuted: toggle("isMuted"),
-    toggleMenu: toggle("isMenuOpen"),
-    toggleNightOrder: toggle("isNightOrder"),
-    toggleStatic: toggle("isStatic"),
-    toggleNight: toggle("isNight"),
-    toggleGrimoire: toggle("isPublic"),
-    toggleImageOptIn: toggle("isImageOptIn"),
+    setZoom: set('zoom'),
+    setBackground: set('background'),
+    toggleMuted: toggle('isMuted'),
+    toggleMenu: toggle('isMenuOpen'),
+    toggleNightOrder: toggle('isNightOrder'),
+    toggleStatic: toggle('isStatic'),
+    toggleNight: toggle('isNight'),
+    toggleGrimoire: toggle('isPublic'),
+    toggleImageOptIn: toggle('isImageOptIn'),
     toggleModal({ modals }, name) {
       if (name) {
         modals[name] = !modals[name];
@@ -216,19 +216,19 @@ export default new Vuex.Store({
           (role) =>
             rolesJSONbyId.get(role.id) ||
             state.roles.get(role.id) ||
-            Object.assign({}, customRole, role),
+            Object.assign({}, customRole, role)
         )
         // default empty icons and placeholders, clean up firstNight / otherNight
         .map((role) => {
           if (rolesJSONbyId.get(role.id)) return role;
           role.imageAlt = // map team to generic icon
             {
-              townsfolk: "good",
-              outsider: "outsider",
-              minion: "minion",
-              demon: "evil",
-              fabled: "fabled",
-            }[role.team] || "custom";
+              townsfolk: 'good',
+              outsider: 'outsider',
+              minion: 'minion',
+              demon: 'evil',
+              fabled: 'fabled',
+            }[role.team] || 'custom';
           role.firstNight = Math.abs(role.firstNight);
           role.otherNight = Math.abs(role.otherNight);
           return role;
@@ -240,13 +240,13 @@ export default new Vuex.Store({
       // convert to Map without Fabled
       state.roles = new Map(
         processedRoles
-          .filter((role) => role.team !== "fabled")
-          .map((role) => [role.id, role]),
+          .filter((role) => role.team !== 'fabled')
+          .map((role) => [role.id, role])
       );
       // update Fabled to include custom Fabled from this script
       state.fabled = new Map([
         ...processedRoles
-          .filter((r) => r.team === "fabled")
+          .filter((r) => r.team === 'fabled')
           .map((r) => [r.id, r]),
         ...fabledJSON.map((role) => [role.id, role]),
       ]);
@@ -254,9 +254,9 @@ export default new Vuex.Store({
       state.otherTravelers = new Map(
         rolesJSON
           .filter(
-            (r) => r.team === "traveler" && !roles.some((i) => i.id === r.id),
+            (r) => r.team === 'traveler' && !roles.some((i) => i.id === r.id)
           )
-          .map((role) => [role.id, role]),
+          .map((role) => [role.id, role])
       );
     },
     setEdition(state, edition) {
@@ -269,6 +269,10 @@ export default new Vuex.Store({
       }
       state.modals.edition = false;
     },
+    // setTimer(state, timer) {
+    //   console.log(timer)
+    //   state.timer = timer
+    // }
   },
   plugins: [persistence, socket],
 });

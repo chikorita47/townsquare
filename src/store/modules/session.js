@@ -28,6 +28,7 @@ const state = () => ({
   markedPlayer: -1,
   isVoteHistoryAllowed: true,
   isRolesDistributed: false,
+  timer: null,
 });
 
 const getters = {};
@@ -105,6 +106,10 @@ const mutations = {
   lockVote(state, lock) {
     state.lockedVote = lock !== undefined ? lock : state.lockedVote + 1;
   },
+  setTimer(state, timer) {
+    console.log('setTimer mutation in session', state, timer)
+    state.timer = timer
+  }
 };
 
 export default {
