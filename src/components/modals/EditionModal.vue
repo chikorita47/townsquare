@@ -114,14 +114,21 @@ export default {
           "Shadow Puppets",
           '[{"id":"_meta","name":"Shadow Puppets"},{"id":"washerwoman"},{"id":"investigator"},{"id":"librarian"},{"id":"chef"},{"id":"empath"},{"id":"fortune_teller"},{"id":"undertaker"},{"id":"monk"},{"id":"ravenkeeper"},{"id":"virgin"},{"id":"slayer"},{"id":"soldier"},{"id":"mayor"},{"id":"butler"},{"id":"saint"},{"id":"recluse"},{"id":"drunk"},{"id":"lunatic"},{"id":"poisoner"},{"id":"spy"},{"id":"baron"},{"id":"scarlet_woman"},{"id":"marionette"},{"id":"imp"}]',
         ],
-        /*
         [
-          "Deadly Penance Day",
-          '[{"id":"_meta","name":"Deadly Penance Day","author":"TPI"},{"id":"bountyhunter"},{"id":"chef"},{"id":"cultleader"},{"id":"exorcist"},{"id":"fool"},{"id":"gambler"},{"id":"investigator"},{"id":"mayor"},{"id":"philosopher"},{"id":"preacher"},{"id":"sailor"},{"id":"soldier"},{"id":"town_crier"},{"id":"politician"},{"id":"barber"},{"id":"drunk"},{"id":"saint"},{"id":"assassin"},{"id":"witch"},{"id":"spy"},{"id":"baron"},{"id":"lilmonsta"}]',
+          "Trouble with Violets",
+          '[{"id":"washerwoman"},{"id":"librarian"},{"id":"investigator"},{"id":"chef"},{"id":"empath"},{"id":"fortuneteller"},{"id":"undertaker"},{"id":"monk"},{"id":"ravenkeeper"},{"id":"virgin"},{"id":"slayer"},{"id":"soldier"},{"id":"mayor"},{"id":"butler"},{"id":"drunk"},{"id":"recluse"},{"id":"saint"},{"id":"eviltwin"},{"id":"witch"},{"id":"cerenovus"},{"id":"pithag"},{"id":"fanggu"},{"id":"vigormortis"},{"id":"nodashii"},{"id":"vortox"}]',
+        ],
+        [
+          "Everyone Can Play",
+          '[{"id":"_meta","name":"Everyone Can Play","author":"Ben Burns"},{"id":"librarian"},{"id":"clockmaker"},{"id":"grandmother"},{"id":"fortuneteller"},{"id":"empath"},{"id":"monk"},{"id":"undertaker"},{"id":"gambler"},{"id":"artist"},{"id":"slayer"},{"id":"fool"},{"id":"ravenkeeper"},{"id":"mayor"},{"id":"drunk"},{"id":"recluse"},{"id":"saint"},{"id":"moonchild"},{"id":"baron"},{"id":"poisoner"},{"id":"assassin"},{"id":"devilsadvocate"},{"id":"spy"},{"id":"scarletwoman"},{"id":"imp"}]',
         ],
         [
           "Catfishing 11.1",
           '[{"id":"_meta","name":"Catfishing11.1","author":"Emily","logo":"https://i.imgur.com/tkFhtDn.png"},{"id":"investigator"},{"id":"chef"},{"id":"grandmother"},{"id":"balloonist"},{"id":"dreamer"},{"id":"fortune_teller"},{"id":"snake_charmer"},{"id":"gambler"},{"id":"savant"},{"id":"philosopher"},{"id":"ravenkeeper"},{"id":"amnesiac"},{"id":"cannibal"},{"id":"drunk"},{"id":"recluse"},{"id":"sweetheart"},{"id":"mutant"},{"id":"lunatic"},{"id":"godfather"},{"id":"cerenovus"},{"id":"pit-hag"},{"id":"widow"},{"id":"imp"},{"id":"vigormortis"},{"id":"fang_gu"},{"id":"beggar"},{"id":"barista"},{"id":"apprentice"},{"id":"harlot"},{"id":"bone_collector"}]',
+        ],
+        [
+          "Deadly Penance Day",
+          '[{"id":"_meta","name":"Deadly Penance Day","author":"TPI"},{"id":"bountyhunter"},{"id":"chef"},{"id":"cultleader"},{"id":"exorcist"},{"id":"fool"},{"id":"gambler"},{"id":"investigator"},{"id":"mayor"},{"id":"philosopher"},{"id":"preacher"},{"id":"sailor"},{"id":"soldier"},{"id":"town_crier"},{"id":"politician"},{"id":"barber"},{"id":"drunk"},{"id":"saint"},{"id":"assassin"},{"id":"witch"},{"id":"spy"},{"id":"baron"},{"id":"lilmonsta"}]',
         ],
         [
           "On Thin Ice (Teensyville)",
@@ -131,15 +138,20 @@ export default {
           "Race To The Bottom (Teensyville)",
           '[{"id":"doomsayer"},{"id":"sentinel"},{"id":"clockmaker"},{"id":"empath"},{"id":"dreamer"},{"id":"slayer"},{"id":"courtier"},{"id":"mayor"},{"id":"lunatic"},{"id":"klutz"},{"id":"scarletwoman"},{"id":"spy"},{"id":"vortox"}]',
         ],
+        /*
         [
           "Frankenstein's Mayor by Ted (Teensyville)",
           '[{"id":"sentinel"},{"id":"chef"},{"id":"undertaker"},{"id":"oracle"},{"id":"sage"},{"id":"ravenkeeper"},{"id":"mayor"},{"id":"recluse"},{"id":"lunatic"},{"id":"poisoner"},{"id":"spy"},{"id":"zombuul"}]',
         ],
+        */
         [
           "Vigormortis High School (Teensyville)",
           '[{"id":"sentinel"},{"id":"chef"},{"id":"empath"},{"id":"chambermaid"},{"id":"monk"},{"id":"ravenkeeper"},{"id":"mayor"},{"id":"saint"},{"id":"goon"},{"id":"poisoner"},{"id":"devils_advocate"},{"id":"vigormortis"}]',
         ],
-        */
+        [
+          "Miserable Little Pile of Secrets (Teensyville)",
+          '[{"id":"_meta","name":"Miserable Little Pile of Secrets","author":"Ben Burns"},{"id":"amnesiac"},{"id":"gambler"},{"id":"exorcist"},{"id":"dreamer"},{"id":"professor"},{"id":"philosopher"},{"id":"lunatic"},{"id":"barber"},{"id":"goblin"},{"id":"pithag"},{"id":"pukka"}]',
+        ],
       ],
     };
   },
